@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title><h4>Account settings</h4></mat-card-title>
+    <app-loading [condition]="isLoading"></app-loading>
+    <mat-card-content *ngIf="!isLoading">
+      <form #accountForm="ngForm" class="dlb-container" (ngSubmit)="save(user)">
+        <mat-form-field>
+          <input matInput placeholder="Enter your email" [(ngModel)]="user.email" required [ngModelOptions]="{standalone: true}">
+          <mat-label><mat-icon>email</mat-icon> Email</mat-label>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Enter your username" [(ngModel)]="user.username" required [ngModelOptions]="{standalone: true}">
+          <mat-label><mat-icon>email</mat-icon> Username</mat-label>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!accountForm.form.valid">
+          <i class="fa fa-save"></i> Save
+        </button>
+        <br>
+        <app-snack-bar [message]="snackbar.message"></app-snack-bar>    
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

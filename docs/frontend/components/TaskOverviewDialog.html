@@ -1,0 +1,836 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Frontend Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Frontend Application</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TaskOverviewDialog</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/tasks/tasks.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>task-overview-dialog</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">template</td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;h1 mat-dialog-title&gt;{{data.title}}&lt;/h1&gt;             &lt;div class&#x3D;&quot;dlb-dialog-content&quot;&gt;
+               &lt;div mat-dialog-content  [style.background]&#x3D;&quot;data.color.secondary&quot;&gt;
+                &lt;div class&#x3D;&quot;dlb-dialog-content&quot;&gt;
+                  &lt;mat-list [style.background]&#x3D;&quot;data.color.primary&quot;&gt;
+                    &lt;h3 mat-subheader&gt;Description&lt;/h3&gt;
+
+                    &lt;mat-list-item&gt;&lt;mat-icon mat-list-icon&gt;schedule&lt;/mat-icon&gt; Start At : {{ data.start | date:&#x27;medium&#x27; }}&lt;/mat-list-item&gt;
+                    &lt;mat-list-item&gt;&lt;mat-icon mat-list-icon&gt;schedule&lt;/mat-icon&gt; End At : {{ data.end | date:&#x27;medium&#x27;}}&lt;/mat-list-item&gt;
+
+                  &lt;/mat-list&gt;
+                &lt;/div&gt;
+               &lt;/div&gt;
+             &lt;/div&gt;
+             &lt;div mat-dialog-actions&gt;
+               &lt;button mat-button (click)&#x3D;&quot;onNoClick()&quot;&gt;OK&lt;/button&gt;
+             &lt;div&gt;</code></pre></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#data">data</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialogRef">dialogRef</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#onNoClick">onNoClick</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialogRef: <a href="../classes/Task.html">MatDialogRef<TaskOverviewDialog></a>, data: CalendarEvent)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="365" class="link-to-prism">src/app/pages/tasks/tasks.component.ts:365</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../classes/Task.html" target="_self" >MatDialogRef&lt;TaskOverviewDialog&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                    <code>CalendarEvent</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onNoClick"></a>
+                        <span class="name">
+                            <b>
+                            onNoClick
+                            </b>
+                            <a href="#onNoClick"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onNoClick()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="370" class="link-to-prism">src/app/pages/tasks/tasks.component.ts:370</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            data
+                            </b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>data:     <code>CalendarEvent</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>CalendarEvent</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Inject(MAT_DIALOG_DATA)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="368" class="link-to-prism">src/app/pages/tasks/tasks.component.ts:368</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialogRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialogRef
+                            </b>
+                            <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>dialogRef:     <code><a href="../classes/Task.html" target="_self" >MatDialogRef&lt;TaskOverviewDialog&gt;</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Task.html" target="_self" >MatDialogRef&lt;TaskOverviewDialog&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="367" class="link-to-prism">src/app/pages/tasks/tasks.component.ts:367</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AfterViewChecked,  ChangeDetectionStrategy, ChangeDetectorRef, Component, Inject, OnInit, TemplateRef, ViewChild} from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatPaginator, MatSort, MatTableDataSource, PageEvent } from &#x27;@angular/material&#x27;;
+import { addDays, addHours, endOfDay, endOfMonth, isSameDay, isSameMonth, startOfDay, subDays } from &#x27;date-fns&#x27;;
+import { CalendarEvent, CalendarEventAction, CalendarEventTimesChangedEvent } from &#x27;angular-calendar&#x27;;
+
+import { AuthService } from &#x27;../../system/services/auth.service&#x27;;
+import { CategoryService } from &#x27;../../system/services/category.service&#x27;;
+import { MediaService } from &#x27;../../system/services/media.service&#x27;;
+import { TaskService } from &#x27;../../system/services/task.service&#x27;;
+
+import { Category } from &#x27;../../system/models/category&#x27;;
+import { Media } from &#x27;../../system/models/media&#x27;;
+import { Task } from &#x27;../../system/models/task&#x27;;
+
+import { SnackBarComponent } from &#x27;../../system/snack-bar/snack-bar.component&#x27;;
+
+const colors: any &#x3D; {
+  blue: {
+    primary: &#x27;#1e90ff&#x27;,
+    secondary: &#x27;#D1E8FF&#x27;
+  },
+  red: {
+    primary: &#x27;#ad2121&#x27;,
+    secondary: &#x27;#FAE3E3&#x27;
+  },
+  yellow: {
+    primary: &#x27;#e3bc08&#x27;,
+    secondary: &#x27;#FDF1BA&#x27;
+  }
+};
+
+@Component({
+  selector: &#x27;app-tasks&#x27;,
+  templateUrl: &#x27;./tasks.component.html&#x27;,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: [&#x27;./tasks.component.scss&#x27;]
+})
+export class TasksComponent implements OnInit {
+
+  actions: CalendarEventAction[] &#x3D; [
+    {
+      label: &#x27;&lt;i class&#x3D;&quot;fa fa-fw fa-pencil&quot;&gt;&lt;/i&gt;&#x27;,
+      onClick: ({ event }: { event: CalendarEvent }): void &#x3D;&gt; {
+        this.handleEvent(&#x27;Edited&#x27;, event);
+      }
+    },
+    {
+      label: &#x27;&lt;i class&#x3D;&quot;fa fa-fw fa-times&quot;&gt;&lt;/i&gt;&#x27;,
+      onClick: ({ event }: { event: CalendarEvent }): void &#x3D;&gt; {
+        //this.tasks &#x3D; this.tasks.filter(iEvent &#x3D;&gt; iEvent !&#x3D;&#x3D; event);
+        this.handleEvent(&#x27;Deleted&#x27;, event);
+      }
+    }
+  ];
+  activeDayIsOpen: boolean &#x3D; true;
+  addTaskForm: FormGroup;
+  categories: Category[] &#x3D; [];
+  displayedColumns: string[] &#x3D; [&#x27;title&#x27;, &#x27;primarycolor&#x27;, &#x27;secondarycolor&#x27;, &#x27;startsat&#x27;, &#x27;endsat&#x27;, &#x27;actions&#x27;];
+  medias: Media[] &#x3D; [];
+  tasks: Task[] &#x3D; [];  
+  pageEvent: PageEvent;
+  pageSizeOptions: number[] &#x3D; [5 ,10, 20, 50, 100];
+  refresh: Subject&lt;any&gt; &#x3D; new Subject();
+  view: string &#x3D; &#x27;month&#x27;;
+  viewDate: Date &#x3D; new Date();
+  
+  category &#x3D; new Category();
+  currentPage &#x3D; 1;
+  content &#x3D; new FormControl(&#x27;&#x27;, Validators.required);
+  dataSource &#x3D; new MatTableDataSource&lt;Task&gt;([]);
+  isLoading &#x3D; true;
+  isEditing &#x3D; false;
+  isRateLimitReached &#x3D; false;
+  media &#x3D; new Media();
+  nbTasks &#x3D; 0;
+  nbMedias &#x3D; 0;
+  nbCategories &#x3D; 0;
+  pageSize &#x3D; 10;
+  selectedCategories &#x3D; [];
+  task &#x3D; new Task();
+  title &#x3D; new FormControl(&#x27;&#x27;, Validators.required);
+  color &#x3D; {
+    primary: &#x27;#ad2121&#x27;,
+    secondary: &#x27;#FAE3E3&#x27;
+  };
+  @ViewChild( MatPaginator ) paginator: MatPaginator;
+  @ViewChild( MatSort ) sort: MatSort;
+  
+  constructor(public auth: AuthService,
+              public dialog: MatDialog,
+              public snackbar: SnackBarComponent,
+              private categoryService: CategoryService,
+              private changeDetector: ChangeDetectorRef,
+              private formBuilder: FormBuilder,
+              private mediaService: MediaService,
+              private taskService: TaskService) { }
+
+  addEvent(): void {
+    this.task &#x3D; {
+      categories:[],
+      comments:[],
+      color: this.color,
+      createdAt: new Date(),
+      draggable: true,
+      end: endOfDay(new Date()),
+      media:{},
+      public: true,
+      published: true,
+      recycled: false,
+      resizable: {
+        beforeStart: true,
+        afterEnd: true
+      },
+      start: startOfDay(new Date()),
+      title: &#x27;New event&#x27;,
+      updated: [],
+      user: this.auth.currentUser      
+    }
+
+  }
+
+  addTask(task: Task){
+
+    task.title &#x3D; this.addTaskForm.value.title;
+    task.content &#x3D; this.addTaskForm.value.content;
+    task.media &#x3D; this.media;
+    task.categories &#x3D; this.selectedCategories;
+    task.user &#x3D; this.auth.currentUser; 
+    console.log(task)
+    this.taskService.addTask(task).subscribe(
+      res &#x3D;&gt; {
+        this.getTasks();
+        this.snackbar.setMessage(&#x27;item added successfully.&#x27;, &#x27;success&#x27;);
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+  cancelEditing() {
+    this.isEditing &#x3D; false;
+    this.task &#x3D; new Task();
+    this.snackbar.setMessage(&#x27;item editing cancelled.&#x27;, &#x27;warning&#x27;);
+    // reload the tasks to reset the editing
+    this.getTasks();
+    this.addTaskForm.reset();
+  }
+
+  countTasks() {
+    this.taskService.countTasks().subscribe(
+      data &#x3D;&gt; {
+        this.nbTasks &#x3D; data;
+        this.isLoading &#x3D; false
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  countCategories() {
+    this.categoryService.countCategories().subscribe(
+      data &#x3D;&gt; {
+        this.nbCategories &#x3D; data;
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  countMedias() {
+    this.mediaService.countMedias().subscribe(
+      data &#x3D;&gt; {
+        this.nbMedias &#x3D; data;
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
+    if (isSameMonth(date, this.viewDate)) {
+      this.viewDate &#x3D; date;
+      if (
+        (isSameDay(this.viewDate, date) &amp;&amp; this.activeDayIsOpen &#x3D;&#x3D;&#x3D; true) ||
+        events.length &#x3D;&#x3D;&#x3D; 0
+      ) {
+        this.activeDayIsOpen &#x3D; false;
+      } else {
+        this.activeDayIsOpen &#x3D; true;
+      }
+    }
+  }
+
+  editTask(task: Task) {
+    task.title &#x3D; this.addTaskForm.value.title;
+    task.media &#x3D; this.media;
+    task.content &#x3D; this.addTaskForm.value.content;
+    task.categories &#x3D; this.selectedCategories
+    this.taskService.editTask(task).subscribe(
+      () &#x3D;&gt; {
+        this.isEditing &#x3D; false;
+        this.getTasks();
+        this.addTaskForm.reset();
+        this.snackbar.setMessage(&#x27;item edited successfully.&#x27;, &#x27;success&#x27;);
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  deleteTask(task: Task) {
+    if (window.confirm(&#x27;Are you sure you want to permanently delete this item?&#x27;)) {
+      this.taskService.deleteTask(task).subscribe(
+        () &#x3D;&gt; {
+          this.getTasks()
+          this.snackbar.setMessage(&#x27;item deleted successfully.&#x27;, &#x27;success&#x27;);
+        },
+        error &#x3D;&gt; console.log(error)
+      );
+    }
+  }
+
+  enableEditing(task: Task) {
+    this.isEditing &#x3D; true;
+    this.task &#x3D; task;
+    this.media &#x3D; this.task.media;    
+    this.selectedCategories &#x3D; [];
+    for(var category in task.categories) {
+      this.selectedCategories.push(category)
+    }
+    this.addTaskForm &#x3D; this.formBuilder.group({
+      title: this.task.title,
+      content: this.task.content,
+      media: this.task.media,
+      categories: this.task.categories,
+      user: this.auth.currentUser
+    });
+  }
+
+  eventTimesChanged({ event, newStart, newEnd }: CalendarEventTimesChangedEvent): void {
+    event.start &#x3D; newStart;
+    event.end &#x3D; newEnd;
+    this.handleEvent(&#x27;Dropped or resized&#x27;, event);
+    this.refresh.next();
+  }
+
+  handleEvent(action: string, event: CalendarEvent): void {
+    const dialogRef &#x3D; this.dialog.open(TaskOverviewDialog, {
+      data: {event, action}
+    });   
+  }
+
+  getCategories() {
+    this.categoryService.getCategories({currentPage: this.currentPage, perPage: this.pageSize}).subscribe(
+      data &#x3D;&gt; {
+        this.categories &#x3D; data;
+        this.selectedCategories.push(this.categories[0])
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  getMedias() {
+    this.mediaService.getMedias({currentPage: 1, perPage: 5}).subscribe(
+      data &#x3D;&gt; {
+        this.medias &#x3D; data;
+        this.media &#x3D; this.medias[0]
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  getTasks() {
+    this.taskService.getTasks({currentPage: this.currentPage, perPage: this.pageSize}).subscribe(
+      data &#x3D;&gt; {
+        this.tasks &#x3D; data.map(function(task) {
+          task.start &#x3D; new Date(task.start);
+          task.end &#x3D; new Date(task.end);
+          return task
+        })
+        this.addEvent();
+        this.dataSource &#x3D; new MatTableDataSource(this.tasks);
+        this.dataSource.paginator &#x3D; this.paginator;
+        this.dataSource.sort &#x3D; this.sort;
+        this.countTasks();
+        this.addTaskForm &#x3D; this.formBuilder.group({
+          title: this.title,
+          content: this.content,
+          media: this.media,
+          user: this.auth.currentUser,
+          color: {},
+          categories: this.selectedCategories,
+          updated:[],
+          public: true,
+          published: true,
+          start: new Date(),
+          end: new Date(),
+          comments:[]
+        });   
+      },
+      error &#x3D;&gt; console.log(error)
+    );
+  }
+
+  ngAfterViewChecked() {
+    this.changeDetector.detectChanges();
+  }
+
+  ngOnInit() {
+    this.dataSource.paginator &#x3D; this.paginator;
+    this.getCategories();
+    this.getMedias();
+    this.countMedias();
+    this.addTaskForm &#x3D; this.formBuilder.group({
+      title: this.title,
+      content: this.content,
+      media: this.media,
+      user: this.auth.currentUser,
+      categories: this.selectedCategories,
+      updated:[],
+      public: true,
+      published: true,
+      start: new Date(),
+      end: new Date(),
+      comments:[]
+     });        
+    this.getTasks();
+  }
+
+  setClassTitle() {
+    return this.title.hasError(&#x27;required&#x27;) ? &#x27;You must enter a value&#x27; :
+        this.title.hasError(&#x27;title&#x27;) ? &#x27;Not a valid title&#x27; :
+            &#x27;&#x27;;
+  }
+
+  setClassContent() {
+    return this.content.hasError(&#x27;required&#x27;) ? &#x27;You must enter a value&#x27; :
+        this.content.hasError(&#x27;content&#x27;) ? &#x27;Not a valid content&#x27; :
+            &#x27;&#x27;;
+  }
+
+  setPageSizeOptions(setPageSizeOptionsInput: string) {
+    this.pageSizeOptions &#x3D; setPageSizeOptionsInput.split(&#x27;,&#x27;).map(str &#x3D;&gt; +str);
+    this.getTasks() 
+  }  
+
+}
+
+@Component({
+  selector: &#x27;task-overview-dialog&#x27;,
+  template: &#x60;&lt;h1 mat-dialog-title&gt;{{data.title}}&lt;/h1&gt;
+             &lt;div class&#x3D;&quot;dlb-dialog-content&quot;&gt;
+               &lt;div mat-dialog-content  [style.background]&#x3D;&quot;data.color.secondary&quot;&gt;
+                &lt;div class&#x3D;&quot;dlb-dialog-content&quot;&gt;
+                  &lt;mat-list [style.background]&#x3D;&quot;data.color.primary&quot;&gt;
+                    &lt;h3 mat-subheader&gt;Description&lt;/h3&gt;
+
+                    &lt;mat-list-item&gt;&lt;mat-icon mat-list-icon&gt;schedule&lt;/mat-icon&gt; Start At : {{ data.start | date:&#x27;medium&#x27; }}&lt;/mat-list-item&gt;
+                    &lt;mat-list-item&gt;&lt;mat-icon mat-list-icon&gt;schedule&lt;/mat-icon&gt; End At : {{ data.end | date:&#x27;medium&#x27;}}&lt;/mat-list-item&gt;
+                    
+                  &lt;/mat-list&gt;
+                &lt;/div&gt;
+               &lt;/div&gt;
+             &lt;/div&gt;
+             &lt;div mat-dialog-actions&gt;
+               &lt;button mat-button (click)&#x3D;&quot;onNoClick()&quot;&gt;OK&lt;/button&gt;               
+             &lt;div&gt;&#x60;,
+})
+export class TaskOverviewDialog {
+  constructor(
+    public dialogRef: MatDialogRef&lt;TaskOverviewDialog&gt;,
+    @Inject(MAT_DIALOG_DATA) public data: CalendarEvent) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}</code></pre>
+    </div>
+
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>{{data.title}}</h1>             <div class="dlb-dialog-content">               <div mat-dialog-content  [style.background]="data.color.secondary">                <div class="dlb-dialog-content">                  <mat-list [style.background]="data.color.primary">                    <h3 mat-subheader>Description</h3>                    <mat-list-item><mat-icon mat-list-icon>schedule</mat-icon> Start At : {{ data.start | date:\'medium\' }}</mat-list-item>                    <mat-list-item><mat-icon mat-list-icon>schedule</mat-icon> End At : {{ data.end | date:\'medium\'}}</mat-list-item>                  </mat-list>                </div>               </div>             </div>             <div mat-dialog-actions>               <button mat-button (click)="onNoClick()">OK</button>             <div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'app-about'},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ArticlesComponent', 'selector': 'app-articles'},{'name': 'CategoriesComponent', 'selector': 'app-categories'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'MediasComponent', 'selector': 'app-medias'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TaskOverviewDialog', 'selector': 'task-overview-dialog'},{'name': 'TasksComponent', 'selector': 'app-tasks'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TaskOverviewDialog'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TaskOverviewDialog.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

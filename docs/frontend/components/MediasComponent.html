@@ -1,0 +1,2285 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Frontend Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Frontend Application</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>MediasComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/medias/medias.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-medias</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./medias.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./medias.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#auth">auth</a>
+                            </li>
+                            <li>
+                                <a href="#currentPage">currentPage</a>
+                            </li>
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#dataSourceQueue">dataSourceQueue</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#displayedQueueColumns">displayedQueueColumns</a>
+                            </li>
+                            <li>
+                                <a href="#dsQueue">dsQueue</a>
+                            </li>
+                            <li>
+                                <a href="#hasAnotherDropZoneOver">hasAnotherDropZoneOver</a>
+                            </li>
+                            <li>
+                                <a href="#hasBaseDropZoneOver">hasBaseDropZoneOver</a>
+                            </li>
+                            <li>
+                                <a href="#isDsqRateLimitReached">isDsqRateLimitReached</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#isRateLimitReached">isRateLimitReached</a>
+                            </li>
+                            <li>
+                                <a href="#media">media</a>
+                            </li>
+                            <li>
+                                <a href="#medias">medias</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mediaService">mediaService</a>
+                            </li>
+                            <li>
+                                <a href="#pageEvent">pageEvent</a>
+                            </li>
+                            <li>
+                                <a href="#pageSize">pageSize</a>
+                            </li>
+                            <li>
+                                <a href="#pageSizeOptions">pageSizeOptions</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#response">response</a>
+                            </li>
+                            <li>
+                                <a href="#resultsDsqLength">resultsDsqLength</a>
+                            </li>
+                            <li>
+                                <a href="#resultsLength">resultsLength</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#snackbar">snackbar</a>
+                            </li>
+                            <li>
+                                <a href="#sort">sort</a>
+                            </li>
+                            <li>
+                                <a href="#uploader">uploader</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addMedia">addMedia</a>
+                            </li>
+                            <li>
+                                <a href="#applyFilter">applyFilter</a>
+                            </li>
+                            <li>
+                                <a href="#clearQueue">clearQueue</a>
+                            </li>
+                            <li>
+                                <a href="#clearQueueItem">clearQueueItem</a>
+                            </li>
+                            <li>
+                                <a href="#deleteMedia">deleteMedia</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fileOverAnother">fileOverAnother</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fileOverBase">fileOverBase</a>
+                            </li>
+                            <li>
+                                <a href="#getMedias">getMedias</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setPageSizeOptions">setPageSizeOptions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(auth: <a href="../injectables/AuthService.html">AuthService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, mediaService: <a href="../injectables/MediaService.html">MediaService</a>, snackbar: <a href="../components/SnackBarComponent.html">SnackBarComponent</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/pages/medias/medias.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>auth</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>mediaService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/MediaService.html" target="_self" >MediaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackbar</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../components/SnackBarComponent.html" target="_self" >SnackBarComponent</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addMedia"></a>
+                        <span class="name">
+                            <b>
+                            addMedia
+                            </b>
+                            <a href="#addMedia"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>addMedia()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/app/pages/medias/medias.component.ts:131</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="applyFilter"></a>
+                        <span class="name">
+                            <b>
+                            applyFilter
+                            </b>
+                            <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>applyFilter(filterValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/pages/medias/medias.component.ts:127</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>filterValue</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clearQueue"></a>
+                        <span class="name">
+                            <b>
+                            clearQueue
+                            </b>
+                            <a href="#clearQueue"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>clearQueue()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/app/pages/medias/medias.component.ts:140</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clearQueueItem"></a>
+                        <span class="name">
+                            <b>
+                            clearQueueItem
+                            </b>
+                            <a href="#clearQueueItem"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>clearQueueItem()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/pages/medias/medias.component.ts:145</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deleteMedia"></a>
+                        <span class="name">
+                            <b>
+                            deleteMedia
+                            </b>
+                            <a href="#deleteMedia"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>deleteMedia(media: <a href="../classes/Media.html">Media</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/app/pages/medias/medias.component.ts:165</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>media</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Media.html" target="_self" >Media</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fileOverAnother"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            fileOverAnother
+                            </b>
+                            <a href="#fileOverAnother"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>fileOverAnother(e: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/app/pages/medias/medias.component.ts:123</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>e</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fileOverBase"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            fileOverBase
+                            </b>
+                            <a href="#fileOverBase"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>fileOverBase(e: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/app/pages/medias/medias.component.ts:119</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>e</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getMedias"></a>
+                        <span class="name">
+                            <b>
+                            getMedias
+                            </b>
+                            <a href="#getMedias"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getMedias()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="177" class="link-to-prism">src/app/pages/medias/medias.component.ts:177</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/pages/medias/medias.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="setPageSizeOptions"></a>
+                        <span class="name">
+                            <b>
+                            setPageSizeOptions
+                            </b>
+                            <a href="#setPageSizeOptions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>setPageSizeOptions(setPageSizeOptionsInput: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="191" class="link-to-prism">src/app/pages/medias/medias.component.ts:191</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>setPageSizeOptionsInput</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="auth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            auth
+                            </b>
+                            <a href="#auth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>auth:     <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/pages/medias/medias.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentPage"></a>
+                        <span class="name">
+                            <b>
+                            currentPage
+                            </b>
+                            <a href="#currentPage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>currentPage:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/medias/medias.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource
+                            </b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>dataSource:     <code><a href="../classes/Media.html" target="_self" >MatTableDataSource&lt;Media&gt;</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Media.html" target="_self" >MatTableDataSource&lt;Media&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/pages/medias/medias.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSourceQueue"></a>
+                        <span class="name">
+                            <b>
+                            dataSourceQueue
+                            </b>
+                            <a href="#dataSourceQueue"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>dataSourceQueue:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new MatTableDataSource(this.dsQueue)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/pages/medias/medias.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns
+                            </b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>displayedColumns:     <code>string[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;title&#x27;, &#x27;content&#x27;, &#x27;createdAt&#x27;, &#x27;actions&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/pages/medias/medias.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedQueueColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedQueueColumns
+                            </b>
+                            <a href="#displayedQueueColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>displayedQueueColumns:     <code>string[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;name&#x27;, &#x27;size&#x27;, &#x27;progress&#x27;, &#x27;status&#x27;, &#x27;actions&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/pages/medias/medias.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dsQueue"></a>
+                        <span class="name">
+                            <b>
+                            dsQueue
+                            </b>
+                            <a href="#dsQueue"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>dsQueue:     <code><a href="../interfaces/QueueElement.html" target="_self" >QueueElement[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/QueueElement.html" target="_self" >QueueElement[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/pages/medias/medias.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasAnotherDropZoneOver"></a>
+                        <span class="name">
+                            <b>
+                            hasAnotherDropZoneOver
+                            </b>
+                            <a href="#hasAnotherDropZoneOver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>hasAnotherDropZoneOver:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/pages/medias/medias.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasBaseDropZoneOver"></a>
+                        <span class="name">
+                            <b>
+                            hasBaseDropZoneOver
+                            </b>
+                            <a href="#hasBaseDropZoneOver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>hasBaseDropZoneOver:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/pages/medias/medias.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isDsqRateLimitReached"></a>
+                        <span class="name">
+                            <b>
+                            isDsqRateLimitReached
+                            </b>
+                            <a href="#isDsqRateLimitReached"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>isDsqRateLimitReached:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/pages/medias/medias.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading
+                            </b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>isLoading:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/pages/medias/medias.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRateLimitReached"></a>
+                        <span class="name">
+                            <b>
+                            isRateLimitReached
+                            </b>
+                            <a href="#isRateLimitReached"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>isRateLimitReached:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/pages/medias/medias.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="media"></a>
+                        <span class="name">
+                            <b>
+                            media
+                            </b>
+                            <a href="#media"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>media:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Media()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/pages/medias/medias.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="medias"></a>
+                        <span class="name">
+                            <b>
+                            medias
+                            </b>
+                            <a href="#medias"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>medias:     <code><a href="../classes/Media.html" target="_self" >Media[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Media.html" target="_self" >Media[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/pages/medias/medias.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mediaService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            mediaService
+                            </b>
+                            <a href="#mediaService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>mediaService:     <code><a href="../injectables/MediaService.html" target="_self" >MediaService</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../injectables/MediaService.html" target="_self" >MediaService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/pages/medias/medias.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageEvent"></a>
+                        <span class="name">
+                            <b>
+                            pageEvent
+                            </b>
+                            <a href="#pageEvent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>pageEvent:     <code>PageEvent</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>PageEvent</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/pages/medias/medias.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageSize"></a>
+                        <span class="name">
+                            <b>
+                            pageSize
+                            </b>
+                            <a href="#pageSize"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>pageSize:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>5</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/pages/medias/medias.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageSizeOptions"></a>
+                        <span class="name">
+                            <b>
+                            pageSizeOptions
+                            </b>
+                            <a href="#pageSizeOptions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>pageSizeOptions:     <code>number[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>number[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[5 ,10, 20, 50, 100]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/medias/medias.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator
+                            </b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>paginator:     <code>MatPaginator</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/pages/medias/medias.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="response"></a>
+                        <span class="name">
+                            <b>
+                            response
+                            </b>
+                            <a href="#response"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>response:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/pages/medias/medias.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resultsDsqLength"></a>
+                        <span class="name">
+                            <b>
+                            resultsDsqLength
+                            </b>
+                            <a href="#resultsDsqLength"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>resultsDsqLength:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/pages/medias/medias.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="resultsLength"></a>
+                        <span class="name">
+                            <b>
+                            resultsLength
+                            </b>
+                            <a href="#resultsLength"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>resultsLength:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/pages/medias/medias.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="snackbar"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            snackbar
+                            </b>
+                            <a href="#snackbar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>snackbar:     <code><a href="../components/SnackBarComponent.html" target="_self" >SnackBarComponent</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../components/SnackBarComponent.html" target="_self" >SnackBarComponent</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/pages/medias/medias.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sort"></a>
+                        <span class="name">
+                            <b>
+                            sort
+                            </b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>sort:     <code>MatSort</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatSort</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatSort)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/pages/medias/medias.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uploader"></a>
+                        <span class="name">
+                            <b>
+                            uploader
+                            </b>
+                            <a href="#uploader"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>uploader:     <code>FileUploader</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>FileUploader</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/pages/medias/medias.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { MatPaginator, MatSort, MatTableDataSource, PageEvent } from &#x27;@angular/material&#x27;;
+import { FileUploader } from &#x27;ng2-file-upload&#x27;;
+
+import { AuthService } from &#x27;../../system/services/auth.service&#x27;;
+import { MediaService } from &#x27;../../system/services/media.service&#x27;;
+import { SnackBarComponent } from &#x27;../../system/snack-bar/snack-bar.component&#x27;;
+
+import { Media } from &#x27;../../system/models/media&#x27;;
+
+const URL &#x3D; &#x27;/api/upload/&#x27;;
+
+export interface QueueElement {
+  alias: string;
+  file: object;
+  index: any;
+  isCancel: boolean;
+  isError: boolean;
+  isReady: boolean;
+  isSuccess: boolean;
+  isUploaded: boolean;
+  isUploading: boolean;
+  progress: number;
+  url: string;
+  withCredentials: boolean;
+}
+
+@Component({
+  selector: &#x27;app-medias&#x27;,
+  templateUrl: &#x27;./medias.component.html&#x27;,
+  styleUrls: [&#x27;./medias.component.scss&#x27;]
+})
+export class MediasComponent implements OnInit {
+  currentPage &#x3D; 1;
+  pageSize &#x3D; 5;
+  pageSizeOptions: number[] &#x3D; [5 ,10, 20, 50, 100];
+  displayedColumns: string[] &#x3D; [&#x27;title&#x27;, &#x27;content&#x27;, &#x27;createdAt&#x27;, &#x27;actions&#x27;];
+  displayedQueueColumns: string[] &#x3D; [&#x27;name&#x27;, &#x27;size&#x27;, &#x27;progress&#x27;, &#x27;status&#x27;, &#x27;actions&#x27;];
+  hasBaseDropZoneOver:boolean;
+  hasAnotherDropZoneOver:boolean;
+  isLoading &#x3D; true
+  isRateLimitReached &#x3D; false;
+  isDsqRateLimitReached &#x3D; false;
+  media &#x3D; new Media();
+  medias: Media[] &#x3D; [];
+  dsQueue: QueueElement[] &#x3D; [] 
+  uploader:FileUploader;
+  response:string;
+  resultsLength &#x3D; 0;
+  resultsDsqLength &#x3D; 0;
+  dataSource: MatTableDataSource&lt;Media&gt;;
+   pageEvent: PageEvent;
+  dataSourceQueue &#x3D; new MatTableDataSource(this.dsQueue);  
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+  
+  constructor (public auth: AuthService,
+               private router: Router,
+               public mediaService: MediaService,
+               public snackbar: SnackBarComponent ) {
+  }
+  ngOnInit() {
+    this.dataSourceQueue &#x3D; new MatTableDataSource(this.dsQueue);  
+    this.dataSourceQueue.sort &#x3D; this.sort;    
+    this.uploader &#x3D; new FileUploader({url: URL+this.auth.currentUser._id, itemAlias: &#x27;media&#x27;});
+    this.uploader.onAfterAddingFile &#x3D; (file)&#x3D;&gt; { 
+      file.withCredentials &#x3D; false;
+      this.dsQueue &#x3D; this.uploader.queue.map(function(queue) {
+        return {
+          alias: queue.alias,
+          file: queue.file,
+          index: queue.index,
+          isCancel: queue.isCancel,
+          isError: queue.isError,
+          isReady: queue.isReady,
+          isSuccess: queue.isSuccess,
+          isUploaded: queue.isUploaded,
+          isUploading: queue.isUploading,
+          progress: queue.progress,
+          url: queue.url,
+          withCredentials: queue.withCredentials
+        }
+      })
+      console.log(this.uploader.queue)
+      this.dataSourceQueue &#x3D; new MatTableDataSource(this.dsQueue);        
+      this.dataSourceQueue.sort &#x3D; this.sort;
+      this.resultsDsqLength &#x3D; this.uploader.queue.length;
+    };
+    this.uploader.onCompleteItem &#x3D; (item:any, response:any, status:any, headers:any) &#x3D;&gt; {
+      let file &#x3D; JSON.parse(response).file[0]
+      this.media.title &#x3D; file.originalname;
+      this.media.content &#x3D; file.filename;
+      this.media.user &#x3D; this.auth.currentUser;
+      this.media.url &#x3D; this.auth.currentUser._id + &#x27;/&#x27; + file.filename;
+      this.addMedia()
+      this.dsQueue &#x3D; this.uploader.queue.map(function(queue) {
+        return {
+          alias: queue.alias,
+          file: queue.file,
+          index: queue.index,
+          isCancel: queue.isCancel,
+          isError: queue.isError,
+          isReady: queue.isReady,
+          isSuccess: queue.isSuccess,
+          isUploaded: queue.isUploaded,
+          isUploading: queue.isUploading,
+          progress: queue.progress,
+          url: queue.url,
+          withCredentials: queue.withCredentials
+        }
+      })
+      this.response &#x3D; &#x27;&#x27;;
+    }
+    this.hasBaseDropZoneOver &#x3D; false;
+    this.hasAnotherDropZoneOver &#x3D; false;
+    this.getMedias();
+  }
+  public fileOverBase(e:any):void {
+    this.hasBaseDropZoneOver &#x3D; e;
+  }
+
+  public fileOverAnother(e:any):void {
+    this.hasAnotherDropZoneOver &#x3D; e;
+  }
+  
+  applyFilter(filterValue: string) {
+    this.dataSource.filter &#x3D; filterValue.trim().toLowerCase();
+  }
+
+  addMedia() {
+    this.mediaService.addMedia(this.media).subscribe(
+      res &#x3D;&gt; {
+        //this.uploader &#x3D; new FileUploader({url: URL+this.auth.currentUser._id, itemAlias: &#x27;media&#x27;});
+        this.getMedias();
+        this.snackbar.setMessage(&#x27;item added successfully.&#x27;, &#x27;success&#x27;);
+    })
+  }
+
+  clearQueue() {
+    this.dsQueue &#x3D; []
+    this.dataSourceQueue &#x3D; new MatTableDataSource(this.dsQueue);            
+  }
+
+  clearQueueItem() {
+    this.dsQueue &#x3D; this.uploader.queue.map(function(queue) {
+        return {
+          alias: queue.alias,
+          file: queue.file,
+          index: queue.index,
+          isCancel: queue.isCancel,
+          isError: queue.isError,
+          isReady: queue.isReady,
+          isSuccess: queue.isSuccess,
+          isUploaded: queue.isUploaded,
+          isUploading: queue.isUploading,
+          progress: queue.progress,
+          url: queue.url,
+          withCredentials: queue.withCredentials
+        }
+      })
+    this.dataSourceQueue &#x3D; new MatTableDataSource(this.dsQueue);            
+  }
+
+  deleteMedia(media: Media) {
+    if (window.confirm(&#x27;Are you sure you want to permanently delete this item?&#x27;)) {
+      this.mediaService.deleteMedia(media).subscribe(
+        () &#x3D;&gt; {
+          this.getMedias();
+          this.snackbar.setMessage(&#x27;item deleted successfully.&#x27;, &#x27;success&#x27;);
+        },
+        error &#x3D;&gt; console.log(error)
+      );
+    }
+  }
+
+  getMedias() {
+    this.mediaService.getMedias({currentPage: this.currentPage, perPage: this.pageSize}).subscribe(
+      data &#x3D;&gt; {
+        this.medias &#x3D; data;  
+        this.dataSource &#x3D; new MatTableDataSource(data);        
+        this.dataSource.paginator &#x3D; this.paginator;
+        this.dataSource.sort &#x3D; this.sort;
+        this.resultsLength &#x3D; data.length;
+        this.isLoading &#x3D; false;
+      },
+      error &#x3D;&gt; console.log(error),
+      () &#x3D;&gt; this.isLoading &#x3D; false
+    );
+  }
+  setPageSizeOptions(setPageSizeOptionsInput: string) {
+    this.pageSizeOptions &#x3D; setPageSizeOptionsInput.split(&#x27;,&#x27;).map(str &#x3D;&gt; +str);
+    this.getMedias() 
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;mat-card&gt;
+    &lt;mat-card-title&gt;&lt;h4&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;backup&lt;/i&gt; Medias ({{medias.length}})&lt;/h4&gt;&lt;/mat-card-title&gt;
+    &lt;mat-card-content&gt;
+      &lt;app-loading [condition]&#x3D;&quot;isLoading&quot;&gt;&lt;/app-loading&gt;
+      &lt;div class&#x3D;&quot;dlb-container mat-elevation-z8&quot;&gt;
+        &lt;div class&#x3D;&quot;dlb-loading-shade&quot;
+             *ngIf&#x3D;&quot;isLoading || isRateLimitReached&quot;&gt;
+          &lt;mat-spinner *ngIf&#x3D;&quot;isLoading&quot;&gt;&lt;/mat-spinner&gt;
+          &lt;div class&#x3D;&quot;dlb-rate-limit-reached&quot; *ngIf&#x3D;&quot;isRateLimitReached&quot;&gt;
+            API rate limit has been reached. It will be reset in one minute.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;dlb-table-container&quot; *ngIf&#x3D;&quot;!isLoading&quot;&gt;
+          &lt;mat-form-field&gt;
+            &lt;input matInput (keyup)&#x3D;&quot;applyFilter($event.target.value)&quot; placeholder&#x3D;&quot;Filter&quot;&gt;
+          &lt;/mat-form-field&gt;
+          &lt;table mat-table [dataSource]&#x3D;&quot;medias&quot; class&#x3D;&quot;dlb-table&quot;
+                 matSort matSortActive&#x3D;&quot;title&quot; matSortDisableClear matSortDirection&#x3D;&quot;asc&quot;&gt;
+            &lt;!-- title Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;title&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef&gt;Title&lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;{{row.title}}&lt;/td&gt;
+            &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;content&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef&gt;Preview&lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;&lt;img [src]&#x3D;&quot;&#x27;api/uploads/&#x27;+row.url&quot; class&#x3D;&quot;img-fluid&quot; style&#x3D;&quot;max-height: 64px;max-width: 64px;&quot;&gt;&lt;/td&gt;
+            &lt;/ng-container&gt;
+            &lt;!-- createdAt  Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;createdAt&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef mat-sort-header disableClear&gt;
+                Created At
+              &lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;{{row.createdAt | date:&#x27;medium&#x27;}}&lt;/td&gt;
+            &lt;/ng-container&gt;
+            &lt;!-- actions  Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;actions&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef mat-sort-header disableClear&gt;
+                Actions
+              &lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let row&quot;&gt;&lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;deleteMedia(row)&quot;&gt;
+                  &lt;i class&#x3D;&quot;material-icons&quot;&gt;delete&lt;/i&gt; Delete&lt;/button&gt;&lt;/td&gt;
+            &lt;/ng-container&gt;
+            &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
+            &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;    
+        &lt;mat-paginator [length]&#x3D;&quot;resultsLength&quot; [pageSize]&#x3D;&quot;pageSize&quot;
+              [pageSizeOptions]&#x3D;&quot;pageSizeOptions&quot;
+              (page)&#x3D;&quot;pageEvent &#x3D; $event&quot;&gt; &lt;/mat-paginator&gt;
+      &lt;/div&gt;
+      &lt;app-snack-bar [message]&#x3D;&quot;snackbar.message&quot;&gt;&lt;/app-snack-bar&gt;
+    &lt;/mat-card-content&gt;
+  &lt;/mat-card&gt;
+  &lt;br&gt;
+  &lt;mat-grid-list cols&#x3D;&quot;12&quot; rowHeight&#x3D;&quot;2:1&quot;&gt;
+    &lt;mat-grid-tile [colspan]&#x3D;&quot;4&quot; [rowspan]&#x3D;&quot;8&quot;&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-title&gt;&lt;h5&gt;Select files&lt;/h5&gt;&lt;/mat-card-title&gt;
+        &lt;mat-card-content&gt;
+          &lt;div ng2FileDrop
+            (fileOver)&#x3D;&quot;fileOverBase($event)&quot;
+            [uploader]&#x3D;&quot;uploader&quot;
+            class&#x3D;&quot;dlb-drop-zone&quot;&gt;
+              Drop files here
+          &lt;/div&gt;
+          or Manual selection
+          &lt;input type&#x3D;&quot;file&quot; ng2FileSelect [uploader]&#x3D;&quot;uploader&quot; multiple/&gt;
+        &lt;/mat-card-content&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+
+    &lt;mat-grid-tile [colspan]&#x3D;&quot;8&quot;  [rowspan]&#x3D;&quot;8+uploader.queue.length&quot;&gt;
+      &lt;mat-card style&#x3D;&quot;min-height:400px;width:100%; margin-left: 20px;padding-top: 40px; &quot;&gt;
+        &lt;mat-card-title&gt;&lt;h5&gt;Upload queue&lt;/h5&gt;&lt;/mat-card-title&gt;
+      
+        &lt;mat-card-content  &gt;          
+          &lt;table mat-table [dataSource]&#x3D;&quot;dataSourceQueue&quot; matSort class&#x3D;&quot;mat-elevation-z8&quot;&gt;
+
+            &lt;!-- Name Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Name &lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{ element?.file?.name }} &lt;/td&gt;
+            &lt;/ng-container&gt;
+
+            &lt;!-- Size Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;size&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Size &lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{ element?.file?.size/1024/1024 | number:&#x27;.2&#x27; }} MB &lt;/td&gt;
+            &lt;/ng-container&gt;
+
+            &lt;!-- Progress Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;progress&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Progress &lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let i &#x3D; index&quot;&gt;&lt;mat-progress-bar [mode]&#x3D;&quot;buffer&quot; [value]&#x3D;&quot;uploader.queue[i].progress&quot;&gt;&lt;/mat-progress-bar&gt;
+                &lt;/td&gt;
+            &lt;/ng-container&gt;
+
+            &lt;!-- Status Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;status&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Status &lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let i &#x3D; index&quot;&gt;
+                &lt;span *ngIf&#x3D;&quot;uploader.queue[i].isSuccess&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;done&lt;/i&gt;&lt;/span&gt;
+                &lt;span *ngIf&#x3D;&quot;uploader.queue[i].isCancel&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;cancel&lt;/i&gt;&lt;/span&gt;
+                &lt;span *ngIf&#x3D;&quot;uploader.queue[i].isError&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;error&lt;/i&gt;&lt;/span&gt;
+              &lt;/td&gt;
+            &lt;/ng-container&gt;
+            &lt;!-- Actions Column --&gt;
+            &lt;ng-container matColumnDef&#x3D;&quot;actions&quot;&gt;
+              &lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt; Actions &lt;/th&gt;
+              &lt;td mat-cell *matCellDef&#x3D;&quot;let element; let i &#x3D; index&quot;&gt; 
+                &lt;button type&#x3D;&quot;button&quot; mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;uploader.queue[i].upload()&quot; [disabled]&#x3D;&quot;uploader.queue[i].isReady || uploader.queue[i].isUploading || uploader.queue[i].isSuccess&quot;&gt;
+                
+                  &lt;span class&#x3D;&quot;glyphicon glyphicon-upload&quot;&gt;&lt;/span&gt; Upload
+                  
+                &lt;/button&gt;
+                &lt;button type&#x3D;&quot;button&quot;mat-raised-button color&#x3D;&quot;accent&quot; (click)&#x3D;&quot;uploader.queue[i].cancel()&quot; [disabled]&#x3D;&quot;!element.isUploading&quot;&gt;
+                  &lt;span class&#x3D;&quot;glyphicon glyphicon-ban-circle&quot;&gt;&lt;/span&gt; Cancel
+                &lt;/button&gt;
+                &lt;button type&#x3D;&quot;button&quot; mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;uploader.queue[i].remove();clearQueueItem(i)&quot;&gt;
+                  &lt;span class&#x3D;&quot;glyphicon glyphicon-trash&quot;&gt;&lt;/span&gt; Remove 
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/ng-container&gt;
+
+
+            &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedQueueColumns&quot;&gt;&lt;/tr&gt;
+            &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedQueueColumns;&quot;&gt;&lt;/tr&gt;
+          &lt;/table&gt;
+          &lt;br&gt;
+           &lt;mat-paginator [length]&#x3D;&quot;resultsLength&quot; [pageSize]&#x3D;&quot;pageSize&quot;
+              [pageSizeOptions]&#x3D;&quot;pageSizeOptions&quot;
+              (page)&#x3D;&quot;pageEvent &#x3D; $event&quot;&gt; &lt;/mat-paginator&gt;
+           &lt;br&gt;
+        &lt;div&gt;
+              &lt;div&gt;
+                &lt;p&gt;Queue progress:&lt;/p&gt;
+                &lt;mat-progress-bar [mode]&#x3D;&quot;&#x27;buffer&#x27;&quot; [bufferValue]&#x3D;&quot;100&quot; [color]&#x3D;&quot;&#x27;primary&#x27;&quot; [value]&#x3D;&quot;uploader.progress&quot; &gt;&lt;/mat-progress-bar&gt;
+                  
+                
+                
+              &lt;/div&gt;
+              &lt;br&gt;
+                
+              &lt;button type&#x3D;&quot;button&quot; mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;uploader.uploadAll()&quot; [disabled]&#x3D;&quot;!uploader.getNotUploadedItems().length&quot;&gt;
+                &lt;span class&#x3D;&quot;glyphicon glyphicon-upload&quot;&gt;&lt;/span&gt; Upload all
+              &lt;/button&gt;
+              &lt;button type&#x3D;&quot;button&quot; mat-raised-button color&#x3D;&quot;accent&quot;(click)&#x3D;&quot;uploader.cancelAll()&quot; [disabled]&#x3D;&quot;!uploader.isUploading&quot;&gt;
+                &lt;span class&#x3D;&quot;glyphicon glyphicon-ban-circle&quot;&gt;&lt;/span&gt; Cancel all
+              &lt;/button&gt;
+              &lt;button type&#x3D;&quot;button&quot; mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;uploader.clearQueue(); clearQueue()&quot; [disabled]&#x3D;&quot;!uploader.queue.length&quot;&gt;
+                &lt;span class&#x3D;&quot;glyphicon glyphicon-trash&quot;&gt;&lt;/span&gt; Remove all
+              &lt;/button&gt;
+            &lt;/div&gt;
+          
+        &lt;/mat-card-content&gt;
+
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/mat-grid-list&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./medias.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">  <mat-card>    <mat-card-title><h4><i class="material-icons">backup</i> Medias ({{medias.length}})</h4></mat-card-title>    <mat-card-content>      <app-loading [condition]="isLoading"></app-loading>      <div class="dlb-container mat-elevation-z8">        <div class="dlb-loading-shade"             *ngIf="isLoading || isRateLimitReached">          <mat-spinner *ngIf="isLoading"></mat-spinner>          <div class="dlb-rate-limit-reached" *ngIf="isRateLimitReached">            API rate limit has been reached. It will be reset in one minute.          </div>        </div>        <div class="dlb-table-container" *ngIf="!isLoading">          <mat-form-field>            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">          </mat-form-field>          <table mat-table [dataSource]="medias" class="dlb-table"                 matSort matSortActive="title" matSortDisableClear matSortDirection="asc">            <!-- title Column -->            <ng-container matColumnDef="title">              <th mat-header-cell *matHeaderCellDef>Title</th>              <td mat-cell *matCellDef="let row">{{row.title}}</td>            </ng-container>                        <ng-container matColumnDef="content">              <th mat-header-cell *matHeaderCellDef>Preview</th>              <td mat-cell *matCellDef="let row"><img [src]="\'api/uploads/\'+row.url" class="img-fluid" style="max-height: 64px;max-width: 64px;"></td>            </ng-container>            <!-- createdAt  Column -->            <ng-container matColumnDef="createdAt">              <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>                Created At              </th>              <td mat-cell *matCellDef="let row">{{row.createdAt | date:\'medium\'}}</td>            </ng-container>            <!-- actions  Column -->            <ng-container matColumnDef="actions">              <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>                Actions              </th>              <td mat-cell *matCellDef="let row"><button mat-raised-button color="warn" (click)="deleteMedia(row)">                  <i class="material-icons">delete</i> Delete</button></td>            </ng-container>            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>          </table>        </div>            <mat-paginator [length]="resultsLength" [pageSize]="pageSize"              [pageSizeOptions]="pageSizeOptions"              (page)="pageEvent = $event"> </mat-paginator>      </div>      <app-snack-bar [message]="snackbar.message"></app-snack-bar>    </mat-card-content>  </mat-card>  <br>  <mat-grid-list cols="12" rowHeight="2:1">    <mat-grid-tile [colspan]="4" [rowspan]="8">      <mat-card>        <mat-card-title><h5>Select files</h5></mat-card-title>        <mat-card-content>          <div ng2FileDrop            (fileOver)="fileOverBase($event)"            [uploader]="uploader"            class="dlb-drop-zone">              Drop files here          </div>          or Manual selection          <input type="file" ng2FileSelect [uploader]="uploader" multiple/>        </mat-card-content>      </mat-card>    </mat-grid-tile>    <mat-grid-tile [colspan]="8"  [rowspan]="8+uploader.queue.length">      <mat-card style="min-height:400px;width:100%; margin-left: 20px;padding-top: 40px; ">        <mat-card-title><h5>Upload queue</h5></mat-card-title>              <mat-card-content  >                    <table mat-table [dataSource]="dataSourceQueue" matSort class="mat-elevation-z8">            <!-- Name Column -->            <ng-container matColumnDef="name">              <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>              <td mat-cell *matCellDef="let element"> {{ element?.file?.name }} </td>            </ng-container>            <!-- Size Column -->            <ng-container matColumnDef="size">              <th mat-header-cell *matHeaderCellDef mat-sort-header> Size </th>              <td mat-cell *matCellDef="let element"> {{ element?.file?.size/1024/1024 | number:\'.2\' }} MB </td>            </ng-container>            <!-- Progress Column -->            <ng-container matColumnDef="progress">              <th mat-header-cell *matHeaderCellDef mat-sort-header> Progress </th>              <td mat-cell *matCellDef="let i = index"><mat-progress-bar [mode]="buffer" [value]="uploader.queue[i].progress"></mat-progress-bar>                </td>            </ng-container>            <!-- Status Column -->            <ng-container matColumnDef="status">              <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>              <td mat-cell *matCellDef="let i = index">                <span *ngIf="uploader.queue[i].isSuccess"><i class="material-icons">done</i></span>                <span *ngIf="uploader.queue[i].isCancel"><i class="material-icons">cancel</i></span>                <span *ngIf="uploader.queue[i].isError"><i class="material-icons">error</i></span>              </td>            </ng-container>            <!-- Actions Column -->            <ng-container matColumnDef="actions">              <th mat-header-cell *matHeaderCellDef mat-sort-header> Actions </th>              <td mat-cell *matCellDef="let element; let i = index">                 <button type="button" mat-raised-button color="primary" (click)="uploader.queue[i].upload()" [disabled]="uploader.queue[i].isReady || uploader.queue[i].isUploading || uploader.queue[i].isSuccess">                                  <span class="glyphicon glyphicon-upload"></span> Upload                                  </button>                <button type="button"mat-raised-button color="accent" (click)="uploader.queue[i].cancel()" [disabled]="!element.isUploading">                  <span class="glyphicon glyphicon-ban-circle"></span> Cancel                </button>                <button type="button" mat-raised-button color="warn" (click)="uploader.queue[i].remove();clearQueueItem(i)">                  <span class="glyphicon glyphicon-trash"></span> Remove                 </button>              </td>            </ng-container>            <tr mat-header-row *matHeaderRowDef="displayedQueueColumns"></tr>            <tr mat-row *matRowDef="let row; columns: displayedQueueColumns;"></tr>          </table>          <br>           <mat-paginator [length]="resultsLength" [pageSize]="pageSize"              [pageSizeOptions]="pageSizeOptions"              (page)="pageEvent = $event"> </mat-paginator>           <br>        <div>              <div>                <p>Queue progress:</p>                <mat-progress-bar [mode]="\'buffer\'" [bufferValue]="100" [color]="\'primary\'" [value]="uploader.progress" ></mat-progress-bar>                                                                </div>              <br>                              <button type="button" mat-raised-button color="primary" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">                <span class="glyphicon glyphicon-upload"></span> Upload all              </button>              <button type="button" mat-raised-button color="accent"(click)="uploader.cancelAll()" [disabled]="!uploader.isUploading">                <span class="glyphicon glyphicon-ban-circle"></span> Cancel all              </button>              <button type="button" mat-raised-button color="warn" (click)="uploader.clearQueue(); clearQueue()" [disabled]="!uploader.queue.length">                <span class="glyphicon glyphicon-trash"></span> Remove all              </button>            </div>                  </mat-card-content>      </mat-card>    </mat-grid-tile>  </mat-grid-list></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'app-about'},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ArticlesComponent', 'selector': 'app-articles'},{'name': 'CategoriesComponent', 'selector': 'app-categories'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'MediasComponent', 'selector': 'app-medias'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TaskOverviewDialog', 'selector': 'task-overview-dialog'},{'name': 'TasksComponent', 'selector': 'app-tasks'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MediasComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MediasComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

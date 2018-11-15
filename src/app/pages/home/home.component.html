@@ -1,0 +1,11 @@
+<div >
+	<ngb-carousel *ngIf="slides">
+  <ng-template ngbSlide *ngFor="let slide of slides">
+    <img [src]="slide.src" style="height: 100vh;margin-top: -65px"alt="Random first slide">
+    <div class="carousel-caption">
+      <div [innerHTML]="slide.title"></div>
+      <div [innerHTML]="slide.subtitle"></div>
+    </div>
+  </ng-template>
+</ngb-carousel>
+</div>

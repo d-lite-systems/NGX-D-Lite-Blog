@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Frontend Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">Frontend Application</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="angulardlitesystems">AngularDLiteSystems</h1>
+<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 7.0.2.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>Install <a href="https://nodejs.org">Node.js</a> and <a href="https://www.mongodb.com">MongoDB</a></li>
+<li>Install Angular CLI: <code>npm i -g @angular/cli</code></li>
+<li>From project root folder install all the dependencies: <code>npm i</code></li>
+</ol>
+<h2 id="cli-workspaces">CLI Workspaces</h2>
+<p>Since CLI v6, CLI workspaces containing multiple projects, such as multiple applications or libraries. CLI projects will now use angular.json instead of <code>.angular-cli.json</code> for build and project configuration.</p>
+<p>Each CLI workspace has projects, each project has targets, and each target can have configurations.</p>
+<div><pre class="line-numbers"><code class="language-none">{
+  &quot;projects&quot;: {
+    &quot;my-project-name&quot;: {
+      &quot;projectType&quot;: &quot;application&quot;,
+      &quot;architect&quot;: {
+        &quot;build&quot;: {
+          &quot;configurations&quot;: {
+            &quot;production&quot;: {},
+            &quot;demo&quot;: {},
+            &quot;staging&quot;: {},
+          }
+        },
+        &quot;serve&quot;: {},
+        &quot;extract-i18n&quot;: {},
+        &quot;test&quot;: {},
+      }
+    },
+    &quot;my-project-name-e2e&quot;: {}
+  },
+}</code></pre></div><h2 id="ng-add">ng add</h2>
+<p>Another new CLI command ng add <package> makes adding new capabilities to your project easy. ng add will use your package manager to download new dependencies and invoke an installation script (implemented as a schematic) which can update your project with configuration changes, add additional dependencies (e.g. polyfills), or scaffold package-specific initialization code.</p>
+<p>Try out some of the following on your fresh ng new application:</p>
+<p><code>ng add @angular/pwa</code> — Turn your application into a PWA by adding an app manifest and service worker
+<code>ng add @ng-bootstrap/schematics</code> — Add ng-bootstrap to your application
+<code>ng add @angular/material</code> — Install and setup Angular Material and theming and register new starter components into ng generate
+<code>ng add @clr/angular@next</code> — Install and setup Clarity from VMWare
+<code>ng add @angular/elements</code> — Add the needed <code>document-register-element.js</code> polyfill and dependencies for Angular Elements (see below)
+Because ng add is built on top of schematics and the npm registry, our hope is that libraries and the community will help us build a rich ecosystem of ng add supporting packages.</p>
+<p>e you have run <code>ng add @angular/material</code> to add material to an existing application, you will also be able to generate 3 new starter components.</p>
+<h3 id="material-sidenav">Material Sidenav</h3>
+<p>You can now generate a starter component including a toolbar with the app name and the side navigation. This component is responsive based on breakpoints.</p>
+<p>Run: <code>ng generate @angular/material:material-nav --name=my-nav</code></p>
+<h3 id="material-dashboard">Material Dashboard</h3>
+<p>You can now generate a starter dashboard component containing a dynamic grid list of cards.</p>
+<p>Run: <code>ng generate @angular/material:material-dashboard --name=my-dashboard</code></p>
+<h3 id="material-data-table">Material Data Table</h3>
+<p>You can generate a starter data table component that is pre-configured with a datasource for sorting and pagination.</p>
+<p>Run: <code>ng generate @angular/material:material-table --name=my-table</code></p>
+<h2 id="development-server">Development server</h2>
+<p><code>npm run dev</code>: <a href="https://github.com/kimmobrunfeldt/concurrently">concurrently</a> execute MongoDB, Angular build, TypeScript compiler and Express server.</p>
+<p>A window will automatically open at <a href="http://localhost:4200">localhost:4200</a>. Angular and Express files are being watched. Any change automatically creates a new bundle, restart Express server and reload your browser.</p>
+<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
+<h2 id="code-scaffolding">Code scaffolding</h2>
+<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
+<h2 id="build">Build</h2>
+<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>--prod</code> flag for a production build.</p>
+<h2 id="running-unit-tests">Running unit tests</h2>
+<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
+<h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
+<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.</p>
+<h3 id="production-mode">Production mode</h3>
+<p><code>npm run prod</code>: run the project with a production bundle and AOT compilation listening at <a href="http://localhost:3000">localhost:3000</a> </p>
+<p>Run <code>ng build--prod</code> flag for a production build. The build artifacts will be stored in the <code>dist/</code> directory. </p>
+<h2 id="deploy-heroku-">Deploy (Heroku)</h2>
+<ol>
+<li>Go to Heroku and create a new app (eg: <code>your-app-name</code>)</li>
+<li>Install <a href="https://devcenter.heroku.com/articles/heroku-command-line">Heroku CLI</a></li>
+<li><code>heroku login</code></li>
+<li><code>mkdir your-app-name &amp;&amp; cd your-app-name</code></li>
+<li><code>git init</code></li>
+<li><code>heroku git:remote -a your-app-name</code></li>
+<li>Download this repo and copy all files into <code>your-app-name</code> folder</li>
+<li><code>npm i</code></li>
+<li>Edit <code>package.json</code> as following:<ul>
+<li>add this line to scripts: <code>&quot;postinstall&quot;: &quot;tsc -p srv &amp;&amp; ng build --prod&quot;</code></li>
+<li>move the following packages from devDependencies to dependencies: <code>@angular/cli</code>, <code>@angular/compiler-cli</code>, <code>@types/jasmine</code>, <code>@types/node</code>, <code>chai</code>, <code>chai-http</code> and <code>typescript</code>.</li>
+</ul>
+</li>
+<li>Edit <code>.env</code> and replace the MongoDB URI with a real remote MongoDB server. You can create a MongoDB server with Heroku or mLab.</li>
+<li><code>git add .</code></li>
+<li><code>git commit -am &quot;Make it beter&quot;</code></li>
+<li><code>git push heroku master</code></li>
+<li><code>heroku open</code> and a window will open with your app online</li>
+</ol>
+<h2 id="library-support">Library Support</h2>
+<p>One of the most requested features for our CLI has been support for creating and building libraries, and we are proud to introduce:</p>
+<p><code>ng generate library &lt;name&gt;</code></p>
+<h2 id="tree-shakable-providers">Tree Shakable Providers</h2>
+<p>To make your applications smaller, we’ve moved from modules referencing services to services referencing modules. This allows us to only bundle services into your code base in modules where they are injected.</p>
+<h3 id="before">Before</h3>
+<div><pre class="line-numbers"><code class="language-none">&#64;NgModule({
+  ...
+  providers: [MyService]
+})
+export class AppModule {}</code></pre></div><div><pre class="line-numbers"><code class="language-none">import { Injectable } from &#39;&#64;angular/core&#39;;
+
+&#64;Injectable()
+export class MyService {
+  constructor() { }
+}</code></pre></div><p>After</p>
+<p>No references are needed in our NgModule.</p>
+<div><pre class="line-numbers"><code class="language-none">import { Injectable } from &#39;&#64;angular/core&#39;;
+
+&#64;Injectable({
+  providedIn: &#39;root&#39;,
+})
+export class MyService {
+  constructor() { }
+}</code></pre></div><h2 id="animations-performance-improvements">Animations Performance Improvements</h2>
+<p>We’ve updated our implementation of Animations to no longer need the web animations polyfill. This means that you can remove this polyfill from your application and save approximately 47KB of bundle size, while increasing animations performance in Safari at the same time.</p>
+<h3 id="rxjs-v6">RxJS v6</h3>
+<p>Angular has been updated to use v6 of RxJS. RxJS is an independent project that released v6 several weeks ago. RxJS v6 brings with it several major changes, along with a backwards compatibility package rxjs-compat that will keep your applications working.</p>
+<p>RxJS has been rearranged to make it more tree-shakable, ensuring that only the pieces of RxJS that you use are included in your production bundles.</p>
+<p>If you use ng update, your application should keep working, but you can learn more about 7.0 migration.</p>
+<h2 id="long-term-support-lts-">Long Term Support (LTS)</h2>
+<p>We are expanding our Long Term Support to all major releases.</p>
+<p>Each major release will be supported for 18 months with around 6 months of active development followed by 12 months of critical bugfixes and security patches.</p>
+<h2 id="further-help">Further help</h2>
+<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

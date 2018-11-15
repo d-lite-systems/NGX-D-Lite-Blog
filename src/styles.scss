@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;     }
+
+.container {
+	margin-top: 20px;
+}
+.dlb-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dlb-container > * {
+  width: 100%;
+}
+
+.dlb-container form {
+  margin-bottom: 20px;
+}
+
+.dlb-container form > * {
+  margin: 5px 0;
+}
+
+.dlb-container .mat-radio-button {
+  margin: 0 5px;
+}
+.dlb-table-container {
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+  padding: 20px;
+}
+
+.dlb-dialog-content {
+  padding-top: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 10px;
+}
+table {
+  width: 100%;
+}
+
+.img-min-icon {
+  margin-left: 3px;
+  margin-right: 3px;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.material-icons {
+  margin-right: 3px;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+.dlb-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dlb-rate-limit-reached {
+  color: #980000;
+  max-width: 360px;
+  text-align: center;
+}
+
+/* Column Widths */
+.mat-column-number,
+.mat-column-state {
+  max-width: 64px;
+}
+
+.mat-column-created {
+  max-width: 124px;
+}
+
+.dlb-drop-zone { 
+  border: dotted 3px lightgray; 
+  height: 256px;
+
+}
+
+.dlb-button-row button,
+.dlb-button-row a {
+  margin-right: 8px;
+}
+.nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+.another-file-over-class { border: dotted 3px green; }
+
+.img-select {
+  max-height: 34px;
+}
+
+.cal-month-view .cal-cell-row:hover {
+  background-color: #c2185b;
+  opacity: 0.9;
+}
+
+.cal-month-view .cal-cell-row .cal-cell:hover, .cal-month-view .cal-cell.cal-has-events.cal-open {
+  background-color: #c2185b;
+}
+
+.cal-month-view .cal-day-cell.cal-weekend .cal-day-number {
+    color: #eb6098;
+    font-size: 1.4em 
+}
+
+.cal-month-view .cal-day-cell.cal-today {
+    background-color: #8c8c8c;
+}
+
+.cal-week-view .cal-header.cal-today {
+    background-color: #333333;
+}
+.cal-week-view .cal-day-headers .cal-header:hover, .cal-week-view .cal-day-headers .cal-drag-over {
+    background-color: #c2185b;
+}
+
+.cal-week-view .cal-hour-odd {
+    background-color: #333333;
+}
+
+.cal-week-view .cal-time-events .cal-day-columns:not(.cal-resize-active) .cal-hour-segment:hover {
+    background-color: #c2185b;
+}
+.cal-day-view .cal-hour:nth-child(odd) {
+    background-color: #333333; }
+
+.cal-day-view .cal-hour-segment:hover,.cal-day-view .cal-drag-over .cal-hour-segment {
+    background-color: #c2185b; }

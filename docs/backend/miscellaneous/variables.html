@@ -1,0 +1,1245 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Backend Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Backend Application</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#app" title="srv/index.ts"><b>app</b>&nbsp;&nbsp;&nbsp;(srv/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Article" title="srv/models/article.ts"><b>Article</b>&nbsp;&nbsp;&nbsp;(srv/.../article.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#articleSchema" title="srv/models/article.ts"><b>articleSchema</b>&nbsp;&nbsp;&nbsp;(srv/.../article.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#autoPopulateLead" title="srv/models/task.ts"><b>autoPopulateLead</b>&nbsp;&nbsp;&nbsp;(srv/.../task.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#autoPopulateLead" title="srv/models/media.ts"><b>autoPopulateLead</b>&nbsp;&nbsp;&nbsp;(srv/.../media.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#autoPopulateLead" title="srv/models/category.ts"><b>autoPopulateLead</b>&nbsp;&nbsp;&nbsp;(srv/.../category.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#autoPopulateLead" title="srv/models/article.ts"><b>autoPopulateLead</b>&nbsp;&nbsp;&nbsp;(srv/.../article.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Category" title="srv/models/category.ts"><b>Category</b>&nbsp;&nbsp;&nbsp;(srv/.../category.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#categorySchema" title="srv/models/category.ts"><b>categorySchema</b>&nbsp;&nbsp;&nbsp;(srv/.../category.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Contact" title="srv/models/contact.ts"><b>Contact</b>&nbsp;&nbsp;&nbsp;(srv/.../contact.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#contactSchema" title="srv/models/contact.ts"><b>contactSchema</b>&nbsp;&nbsp;&nbsp;(srv/.../contact.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#defaultSwagger" title="srv/index.ts"><b>defaultSwagger</b>&nbsp;&nbsp;&nbsp;(srv/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Media" title="srv/models/media.ts"><b>Media</b>&nbsp;&nbsp;&nbsp;(srv/.../media.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#mediaSchema" title="srv/models/media.ts"><b>mediaSchema</b>&nbsp;&nbsp;&nbsp;(srv/.../media.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#mongodbURI" title="srv/index.ts"><b>mongodbURI</b>&nbsp;&nbsp;&nbsp;(srv/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Schema" title="srv/models/article.ts"><b>Schema</b>&nbsp;&nbsp;&nbsp;(srv/.../article.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Schema" title="srv/models/task.ts"><b>Schema</b>&nbsp;&nbsp;&nbsp;(srv/.../task.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Schema" title="srv/models/contact.ts"><b>Schema</b>&nbsp;&nbsp;&nbsp;(srv/.../contact.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Schema" title="srv/models/category.ts"><b>Schema</b>&nbsp;&nbsp;&nbsp;(srv/.../category.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Schema" title="srv/models/media.ts"><b>Schema</b>&nbsp;&nbsp;&nbsp;(srv/.../media.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#storage" title="srv/router/router.ts"><b>storage</b>&nbsp;&nbsp;&nbsp;(srv/.../router.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#Task" title="srv/models/task.ts"><b>Task</b>&nbsp;&nbsp;&nbsp;(srv/.../task.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#taskSchema" title="srv/models/task.ts"><b>taskSchema</b>&nbsp;&nbsp;&nbsp;(srv/.../task.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#transporter" title="srv/controllers/contact.ts"><b>transporter</b>&nbsp;&nbsp;&nbsp;(srv/.../contact.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#upload" title="srv/router/router.ts"><b>upload</b>&nbsp;&nbsp;&nbsp;(srv/.../router.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#uploadsDir" title="srv/router/router.ts"><b>uploadsDir</b>&nbsp;&nbsp;&nbsp;(srv/.../router.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#uploadsDir" title="srv/controllers/media.ts"><b>uploadsDir</b>&nbsp;&nbsp;&nbsp;(srv/.../media.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#uploadsDir" title="srv/index.ts"><b>uploadsDir</b>&nbsp;&nbsp;&nbsp;(srv/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#User" title="srv/models/user.ts"><b>User</b>&nbsp;&nbsp;&nbsp;(srv/.../user.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#userSchema" title="srv/models/user.ts"><b>userSchema</b>&nbsp;&nbsp;&nbsp;(srv/.../user.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>srv/index.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="app"></a>
+                        <span class="name">
+                            <b>
+                            app
+                            </b>
+                            <a href="#app"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>app:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>express()</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="defaultSwagger"></a>
+                        <span class="name">
+                            <b>
+                            defaultSwagger
+                            </b>
+                            <a href="#defaultSwagger"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>defaultSwagger:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>YAML.load(&#x27;./config/default.yaml&#x27;)</code>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Load default swagger from yaml file</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mongodbURI"></a>
+                        <span class="name">
+                            <b>
+                            mongodbURI
+                            </b>
+                            <a href="#mongodbURI"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>mongodbURI:     <code></code>
+</code>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uploadsDir"></a>
+                        <span class="name">
+                            <b>
+                            uploadsDir
+                            </b>
+                            <a href="#uploadsDir"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>uploadsDir:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>path.resolve(__dirname, &#x27;../../../uploads&#x27;)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/models/article.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Article"></a>
+                        <span class="name">
+                            <b>
+                            Article
+                            </b>
+                            <a href="#Article"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Article:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.model(&#x27;Article&#x27;, articleSchema)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="articleSchema"></a>
+                        <span class="name">
+                            <b>
+                            articleSchema
+                            </b>
+                            <a href="#articleSchema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>articleSchema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new mongoose.Schema({
+  title: { type: String, index: true, required: true },
+  content: { type: String, index: true, required: true },
+  createdAt: Date,
+  public : Boolean,
+  published: Boolean,
+  start : Date,
+  end : Date,
+  media: { type: Schema.ObjectId, ref: &#x27;Media&#x27; },
+  user: { type: Schema.ObjectId, ref: &#x27;User&#x27;, required: true },
+  categories:[{ type: Schema.ObjectId, ref: &#x27;Category&#x27;, required: true }],
+  updated: [{
+  	user : Object,
+  	date: Date
+  }],
+  comments: [{
+    user: Object,
+    comment: { type: String, index: true },
+    name : String,
+    date : Date
+  }],
+  recycled : Boolean
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="autoPopulateLead"></a>
+                        <span class="name">
+                            <b>
+                            autoPopulateLead
+                            </b>
+                            <a href="#autoPopulateLead"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>autoPopulateLead:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>function(next) {
+  this.populate(&#x27;user&#x27;, &#x27;username image&#x27;)
+    .populate(&#x27;media&#x27;, &#x27;title url content&#x27;)
+    .populate(&#x27;categories&#x27;, &#x27;title username content&#x27;)
+  next();
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Schema"></a>
+                        <span class="name">
+                            <b>
+                            Schema
+                            </b>
+                            <a href="#Schema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Schema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.Schema</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/models/task.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="autoPopulateLead"></a>
+                        <span class="name">
+                            <b>
+                            autoPopulateLead
+                            </b>
+                            <a href="#autoPopulateLead"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>autoPopulateLead:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>function(next) {
+  this.populate(&#x27;user&#x27;, &#x27;username image&#x27;)
+    .populate(&#x27;media&#x27;, &#x27;title url content&#x27;)
+    .populate(&#x27;categories&#x27;, &#x27;title username content&#x27;)
+    .populate(&#x27;comments.user&#x27;, &#x27;username image&#x27;);
+  next();
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Schema"></a>
+                        <span class="name">
+                            <b>
+                            Schema
+                            </b>
+                            <a href="#Schema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Schema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.Schema</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Task"></a>
+                        <span class="name">
+                            <b>
+                            Task
+                            </b>
+                            <a href="#Task"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Task:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.model(&#x27;Task&#x27;, taskSchema)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="taskSchema"></a>
+                        <span class="name">
+                            <b>
+                            taskSchema
+                            </b>
+                            <a href="#taskSchema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>taskSchema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new mongoose.Schema({
+  actions: Array,
+  categories:[{ type: Schema.ObjectId, ref: &#x27;Category&#x27;, required: true }],
+  color: Object,
+  comments: [{
+    user: { type: Schema.ObjectId, ref: &#x27;User&#x27;, required: true },
+    comment: { type: String, index: true },
+    name: String,
+    date: Date
+  }],
+  content: { type: String, index: true, required: true },
+  createdAt: Date,
+  draggable: Boolean,
+  end: Date,
+  media: { type: Schema.ObjectId, ref: &#x27;Media&#x27; },
+  public: Boolean,
+  published: Boolean,
+  recycled: Boolean,
+  resizable: Object,
+  start: Date,
+  title: { type: String, index: true, required: true },
+  updated: [{
+  	user : { type: Schema.ObjectId, ref: &#x27;User&#x27;, required: true },
+  	date: Date
+  }],
+  user: { type: Schema.ObjectId, ref: &#x27;User&#x27;, required: true },
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/models/media.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="autoPopulateLead"></a>
+                        <span class="name">
+                            <b>
+                            autoPopulateLead
+                            </b>
+                            <a href="#autoPopulateLead"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>autoPopulateLead:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>function(next) {
+  this.populate(&#x27;user&#x27;, &#x27;username image&#x27;)
+  next();
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Media"></a>
+                        <span class="name">
+                            <b>
+                            Media
+                            </b>
+                            <a href="#Media"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Media:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.model(&#x27;Media&#x27;, mediaSchema)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mediaSchema"></a>
+                        <span class="name">
+                            <b>
+                            mediaSchema
+                            </b>
+                            <a href="#mediaSchema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>mediaSchema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new mongoose.Schema({
+  title: { type: String, index: true, required: true },
+  content: { type: String, index: true, required: true },
+  createdAt: Date,
+  public : Boolean,
+  url: String,
+  published: Boolean,
+  start : Date,
+  end : Date,
+  user: { type: Schema.ObjectId, ref: &#x27;User&#x27;, required: true },
+  updated: [{
+  	user : { type: Schema.ObjectId, ref: &#x27;User&#x27; },
+  	date: Date
+  }],
+  recycled : Boolean
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Schema"></a>
+                        <span class="name">
+                            <b>
+                            Schema
+                            </b>
+                            <a href="#Schema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Schema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.Schema</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/models/category.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="autoPopulateLead"></a>
+                        <span class="name">
+                            <b>
+                            autoPopulateLead
+                            </b>
+                            <a href="#autoPopulateLead"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>autoPopulateLead:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>function(next) {
+  this.populate(&#x27;user&#x27;, &#x27;username image&#x27;)
+      .populate(&#x27;media&#x27;, &#x27;title url content&#x27;)    
+  next();
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Category"></a>
+                        <span class="name">
+                            <b>
+                            Category
+                            </b>
+                            <a href="#Category"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Category:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.model(&#x27;Category&#x27;, categorySchema)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categorySchema"></a>
+                        <span class="name">
+                            <b>
+                            categorySchema
+                            </b>
+                            <a href="#categorySchema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>categorySchema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new mongoose.Schema({
+  title: { type: String, index: true, required: true },
+  content: { type: String, index: true, required: true },
+  createdAt: Date,
+  public : Boolean,
+  published: Boolean,
+  start : Date,
+  end : Date,
+  media: { type: Schema.ObjectId, ref: &#x27;Media&#x27; },
+  user: { type: Schema.ObjectId, ref: &#x27;User&#x27;, required: true },
+  updated: [{
+  	user : Object,
+  	date: Date
+  }],
+  comments: [{
+    user: Object,
+    comment: Object,
+    name : String,
+    date : Date
+  }],
+  recycled : Boolean
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Schema"></a>
+                        <span class="name">
+                            <b>
+                            Schema
+                            </b>
+                            <a href="#Schema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Schema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.Schema</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/models/contact.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Contact"></a>
+                        <span class="name">
+                            <b>
+                            Contact
+                            </b>
+                            <a href="#Contact"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Contact:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.model(&#x27;Contact&#x27;, contactSchema)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="contactSchema"></a>
+                        <span class="name">
+                            <b>
+                            contactSchema
+                            </b>
+                            <a href="#contactSchema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>contactSchema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new mongoose.Schema({
+  email: { type: String, index: true, required: true },
+  name: { type: String, index: true, required: true },
+  subject: { type: String, index: true, required: true },
+  text: { type: String, index: true, required: true },
+  createdAt: Date
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Schema"></a>
+                        <span class="name">
+                            <b>
+                            Schema
+                            </b>
+                            <a href="#Schema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>Schema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.Schema</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/router/router.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="storage"></a>
+                        <span class="name">
+                            <b>
+                            storage
+                            </b>
+                            <a href="#storage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>storage:     <code>multer.StorageEngine</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>multer.StorageEngine</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>multer.diskStorage({
+
+  destination: (req, file, cb) &#x3D;&gt; {
+    console.log(req.params.id)
+    if (!fs.existsSync(uploadsDir+&#x27;/&#x27;+req.params.id)){
+        fs.mkdirSync(uploadsDir+&#x27;/&#x27;+req.params.id);
+    }
+    cb(null, uploadsDir+&#x27;/&#x27;+req.params.id);
+  },
+  filename: (req, file, cb) &#x3D;&gt; {
+    let ext &#x3D; path.extname(file.originalname);
+    cb(null, &#x60;${Math.random().toString(36).substring(7)}${ext}&#x60;);
+  },
+  onFileUploadStart: function (file) {
+    console.log(file.originalname + &#x27; is starting ...&#x27;);
+  },
+  onFileUploadComplete: function (file) {
+    console.log(file.fieldname + &#x27; uploaded to  &#x27; + file.path);
+  }
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="upload"></a>
+                        <span class="name">
+                            <b>
+                            upload
+                            </b>
+                            <a href="#upload"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>upload:     <code>multer.Instance</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>multer.Instance</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>multer({ storage: storage })</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uploadsDir"></a>
+                        <span class="name">
+                            <b>
+                            uploadsDir
+                            </b>
+                            <a href="#uploadsDir"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>uploadsDir:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>path.resolve(__dirname, &#x27;../../../uploads&#x27;)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/controllers/contact.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="transporter"></a>
+                        <span class="name">
+                            <b>
+                            transporter
+                            </b>
+                            <a href="#transporter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>transporter:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>nodemailer.createTransport(
+    {
+        service: process.env.NODEMAILER_SERVICE,
+        host: process.env.ACCOUNT_SMTP_HOST,
+        port: Number(process.env.ACCOUNT_SMTP_PORT),
+        secure: Boolean(process.env.ACCOUNT_SMTP_SECURE),
+        auth: {
+            user: process.env.ACCOUNT_USER,
+            pass: process.env.ACCOUNT_PASS
+        },
+        logger: Boolean(process.env.TRANSPORTER_LOGGER),
+        debug: Boolean(process.env.TRANSPORTER_LOGGER) // include SMTP traffic in the logs
+    },
+    {
+        // default message fields
+        // sender info
+        from: process.env.NODEMAILER_FROM,
+        headers: {
+            &#x27;X-Laziness-level&#x27;: 1000 // just an example header, no need to use this
+        }
+    }
+)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/controllers/media.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uploadsDir"></a>
+                        <span class="name">
+                            <b>
+                            uploadsDir
+                            </b>
+                            <a href="#uploadsDir"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>uploadsDir:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>path.resolve(__dirname, &#x27;../../../../uploads&#x27;)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>srv/models/user.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="User"></a>
+                        <span class="name">
+                            <b>
+                            User
+                            </b>
+                            <a href="#User"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>User:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>mongoose.model(&#x27;User&#x27;, userSchema)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userSchema"></a>
+                        <span class="name">
+                            <b>
+                            userSchema
+                            </b>
+                            <a href="#userSchema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>userSchema:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new mongoose.Schema({
+  username: String,
+  email: { type: String, unique: true, lowercase: true, trim: true },
+  password: String,
+  media: String,
+  createdAt: Date,
+  role: String
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title><h4><i class="material-icons">chrome_reader_mode</i>Lasts articles ({{articles.length}})</h4></mat-card-title>
+    <mat-card-content>
+      
+      <app-snack-bar [message]="snackbar.message"></app-snack-bar>
+      <div class="dlb-container mat-elevation-z8">
+        <div class="dlb-loading-shade"
+             *ngIf="isLoading || isRateLimitReached">
+            <app-loading [condition]="isLoading"></app-loading>    
+          <div class="dlb-rate-limit-reached" *ngIf="isRateLimitReached">
+            API rate limit has been reached. It will be reset in one minute.
+          </div>
+        </div>
+        <div class="dlb-table-container" *ngIf="!isLoading">
+          <table mat-table [dataSource]="articles" class="dlb-table"
+                 matSort matSortActive="title" matSortDisableClear matSortDirection="asc">
+            <!-- title Column -->
+            <ng-container matColumnDef="title">
+              <th mat-header-cell *matHeaderCellDef>Title</th>
+              <td mat-cell *matCellDef="let row">{{row.title}}</td>
+            </ng-container>
+            <!-- categories Column -->
+            <ng-container matColumnDef="categories">
+              <th mat-header-cell *matHeaderCellDef>Categories</th>
+              <td mat-cell *matCellDef="let row"><span *ngFor="let category of row.categories">{{category.title}}</span></td>
+            </ng-container>
+            <!-- content Column -->
+            <ng-container matColumnDef="content">
+              <th mat-header-cell *matHeaderCellDef>Content</th>
+              <td mat-cell *matCellDef="let row">{{row.content}}</td>
+            </ng-container>
+            <!-- createdAt  Column -->
+            <ng-container matColumnDef="createdAt">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>
+                Created At
+              </th>
+              <td mat-cell *matCellDef="let row">{{row.createdAt | date:'medium'}}</td>
+            </ng-container>
+            <!-- Image  Column -->
+            <ng-container matColumnDef="image" >
+              <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>
+                Image
+              </th>
+              <td mat-cell *matCellDef="let row"><img [src]="'api/uploads/'+row.media.url" class="img-select"></td>
+            </ng-container>
+            <!-- actions  Column -->
+            <ng-container matColumnDef="actions" >
+              <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>
+                Actions
+              </th>
+              <td mat-cell *matCellDef="let row">
+                <div class="dlb-button-row">
+                  <button mat-raised-button color="accent" type="button" (click)="enableEditing(row)"><i class="material-icons">edit</i> Edit</button>
+                  <button mat-raised-button color="warn" type="button" (click)="deleteArticle(row)"><i class="material-icons">delete</i> Delete</button>
+                </div>
+                </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </div>    
+        <mat-paginator [length]="nbArticles" [pageSize]="pageSize"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = $event"></mat-paginator>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card *ngIf="auth.loggedIn">
+    <mat-card-title><h4 *ngIf="!isEditing">Add new article</h4><h4 *ngIf="isEditing"><img [src]="'api/uploads/'+media.url" class="img-select"> Edit {{article.title}}</h4></mat-card-title>
+    <mat-card-content>
+      <form class="form-inline" class="dlb-container" [formGroup]="addArticleForm" (ngSubmit)="addArticle()">
+        <mat-form-field>
+          <input matInput placeholder="Enter title" formControlName="title" required >
+          <mat-label><mat-icon>label</mat-icon> Title</mat-label>
+          <mat-error *ngIf="title.invalid">{{setClassTitle()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <textarea matInput placeholder="Enter content" formControlName="content" required ></textarea>
+          <mat-label><mat-icon>description</mat-icon> Content</mat-label>
+          <mat-error *ngIf="content.invalid">{{setClassContent()}}</mat-error>
+        </mat-form-field>
+      </form>
+      <mat-form-field>
+          <mat-select placeholder="Categories"  [(ngModel)]="selectedCategories" name="categories" multiple>
+            <mat-option *ngFor="let category of categories" [value]="category"  [ngModelOptions]="{standalone: true}">
+              {{category.title}}
+            </mat-option>
+          </mat-select>
+          <mat-label><mat-icon>category</mat-icon> Category</mat-label>
+        </mat-form-field>
+        <mat-form-field>
+          <img *ngIf="media.url" [src]="'api/uploads/'+media.url" class="img-fluid">
+          <mat-select placeholder="Categories"  [(ngModel)]="media" name="medias" >
+            <mat-option *ngFor="let src of medias" [value]="src"  [ngModelOptions]="{standalone: true}">
+              <img [src]="'api/uploads/'+src.url" class="img-select">
+            </mat-option>
+          </mat-select>
+          <mat-label><mat-icon>backup</mat-icon> Medias</mat-label>
+        </mat-form-field>
+        <button mat-raised-button color="primary"  *ngIf="!isEditing" type="submit" (click)="addArticle()" [disabled]="!addArticleForm.valid">
+          <i class="material-icons">add_box</i> Add
+        </button>
+      <button mat-raised-button color="accent" *ngIf="isEditing" type="submit" (click)="editArticle(article)" [disabled]="!addArticleForm.valid">
+          <i class="material-icons">add_box</i> Edit
+        </button>
+    </mat-card-content>
+  </mat-card>
+</div>

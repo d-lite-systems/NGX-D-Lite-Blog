@@ -1,0 +1,161 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title><h4><i class="material-icons">backup</i> Medias ({{medias.length}})</h4></mat-card-title>
+    <mat-card-content>
+      <app-loading [condition]="isLoading"></app-loading>
+      <div class="dlb-container mat-elevation-z8">
+        <div class="dlb-loading-shade"
+             *ngIf="isLoading || isRateLimitReached">
+          <mat-spinner *ngIf="isLoading"></mat-spinner>
+          <div class="dlb-rate-limit-reached" *ngIf="isRateLimitReached">
+            API rate limit has been reached. It will be reset in one minute.
+          </div>
+        </div>
+        <div class="dlb-table-container" *ngIf="!isLoading">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+          </mat-form-field>
+          <table mat-table [dataSource]="medias" class="dlb-table"
+                 matSort matSortActive="title" matSortDisableClear matSortDirection="asc">
+            <!-- title Column -->
+            <ng-container matColumnDef="title">
+              <th mat-header-cell *matHeaderCellDef>Title</th>
+              <td mat-cell *matCellDef="let row">{{row.title}}</td>
+            </ng-container>
+                        <ng-container matColumnDef="content">
+              <th mat-header-cell *matHeaderCellDef>Preview</th>
+              <td mat-cell *matCellDef="let row"><img [src]="'api/uploads/'+row.url" class="img-fluid" style="max-height: 64px;max-width: 64px;"></td>
+            </ng-container>
+            <!-- createdAt  Column -->
+            <ng-container matColumnDef="createdAt">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>
+                Created At
+              </th>
+              <td mat-cell *matCellDef="let row">{{row.createdAt | date:'medium'}}</td>
+            </ng-container>
+            <!-- actions  Column -->
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>
+                Actions
+              </th>
+              <td mat-cell *matCellDef="let row"><button mat-raised-button color="warn" (click)="deleteMedia(row)">
+                  <i class="material-icons">delete</i> Delete</button></td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </div>    
+        <mat-paginator [length]="resultsLength" [pageSize]="pageSize"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = $event"> </mat-paginator>
+      </div>
+      <app-snack-bar [message]="snackbar.message"></app-snack-bar>
+    </mat-card-content>
+  </mat-card>
+  <br>
+  <mat-grid-list cols="12" rowHeight="2:1">
+    <mat-grid-tile [colspan]="4" [rowspan]="8">
+      <mat-card>
+        <mat-card-title><h5>Select files</h5></mat-card-title>
+        <mat-card-content>
+          <div ng2FileDrop
+            (fileOver)="fileOverBase($event)"
+            [uploader]="uploader"
+            class="dlb-drop-zone">
+              Drop files here
+          </div>
+          or Manual selection
+          <input type="file" ng2FileSelect [uploader]="uploader" multiple/>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="8"  [rowspan]="8+uploader.queue.length">
+      <mat-card style="min-height:400px;width:100%; margin-left: 20px;padding-top: 40px; ">
+        <mat-card-title><h5>Upload queue</h5></mat-card-title>
+      
+        <mat-card-content  >          
+          <table mat-table [dataSource]="dataSourceQueue" matSort class="mat-elevation-z8">
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+              <td mat-cell *matCellDef="let element"> {{ element?.file?.name }} </td>
+            </ng-container>
+
+            <!-- Size Column -->
+            <ng-container matColumnDef="size">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Size </th>
+              <td mat-cell *matCellDef="let element"> {{ element?.file?.size/1024/1024 | number:'.2' }} MB </td>
+            </ng-container>
+
+            <!-- Progress Column -->
+            <ng-container matColumnDef="progress">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Progress </th>
+              <td mat-cell *matCellDef="let i = index"><mat-progress-bar [mode]="buffer" [value]="uploader.queue[i].progress"></mat-progress-bar>
+                </td>
+            </ng-container>
+
+            <!-- Status Column -->
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+              <td mat-cell *matCellDef="let i = index">
+                <span *ngIf="uploader.queue[i].isSuccess"><i class="material-icons">done</i></span>
+                <span *ngIf="uploader.queue[i].isCancel"><i class="material-icons">cancel</i></span>
+                <span *ngIf="uploader.queue[i].isError"><i class="material-icons">error</i></span>
+              </td>
+            </ng-container>
+            <!-- Actions Column -->
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Actions </th>
+              <td mat-cell *matCellDef="let element; let i = index"> 
+                <button type="button" mat-raised-button color="primary" (click)="uploader.queue[i].upload()" [disabled]="uploader.queue[i].isReady || uploader.queue[i].isUploading || uploader.queue[i].isSuccess">
+                
+                  <span class="glyphicon glyphicon-upload"></span> Upload
+                  
+                </button>
+                <button type="button"mat-raised-button color="accent" (click)="uploader.queue[i].cancel()" [disabled]="!element.isUploading">
+                  <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                </button>
+                <button type="button" mat-raised-button color="warn" (click)="uploader.queue[i].remove();clearQueueItem(i)">
+                  <span class="glyphicon glyphicon-trash"></span> Remove 
+                </button>
+              </td>
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedQueueColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedQueueColumns;"></tr>
+          </table>
+          <br>
+           <mat-paginator [length]="resultsLength" [pageSize]="pageSize"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = $event"> </mat-paginator>
+           <br>
+        <div>
+              <div>
+                <p>Queue progress:</p>
+                <mat-progress-bar [mode]="'buffer'" [bufferValue]="100" [color]="'primary'" [value]="uploader.progress" ></mat-progress-bar>
+                  
+                
+                
+              </div>
+              <br>
+                
+              <button type="button" mat-raised-button color="primary" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+                <span class="glyphicon glyphicon-upload"></span> Upload all
+              </button>
+              <button type="button" mat-raised-button color="accent"(click)="uploader.cancelAll()" [disabled]="!uploader.isUploading">
+                <span class="glyphicon glyphicon-ban-circle"></span> Cancel all
+              </button>
+              <button type="button" mat-raised-button color="warn" (click)="uploader.clearQueue(); clearQueue()" [disabled]="!uploader.queue.length">
+                <span class="glyphicon glyphicon-trash"></span> Remove all
+              </button>
+            </div>
+          
+        </mat-card-content>
+
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

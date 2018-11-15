@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><i class="material-icons">home</i> Home</a>
+      <a mat-list-item routerLink="/articles" routerLinkActive="active"><i class="material-icons">import_contacts</i> Articles</a>
+      <a mat-list-item routerLink="/about" routerLinkActive="active" *ngIf="!auth.loggedIn"><i class="material-icons">business</i> About</a>
+
+      <a mat-list-item routerLink="/contact" routerLinkActive="active" *ngIf="!auth.loggedIn"><i class="material-icons">contacts</i> Contact</a>
+      <a mat-list-item routerLink="/categories" routerLinkActive="active" *ngIf="auth.loggedIn"><i class="material-icons">category</i> Categories</a>
+      <a mat-list-item routerLink="/medias" routerLinkActive="active" *ngIf="auth.loggedIn"><i class="material-icons">backup</i> Medias</a>
+      <a mat-list-item routerLink="/tasks" routerLinkActive="active" *ngIf="auth.loggedIn"><i class="material-icons">date_range</i> Tasks</a>      
+      <a mat-list-item routerLink="/login" routerLinkActive="active" *ngIf="!auth.loggedIn"><i class="material-icons">https</i> Login</a>
+      <a mat-list-item routerLink="/register" routerLinkActive="active" *ngIf="!auth.loggedIn"><i class="material-icons">person_add</i> Register</a>
+      <a mat-list-item routerLink="/profile" routerLinkActive="active" *ngIf="auth.loggedIn"><i class="material-icons">edit_attributes</i> Profile (<img *ngIf="auth.currentUser.media" [src]="auth.currentUser.media" class="img-min-icon"><img *ngIf="!auth.currentUser.media" src="./assets/icons/avatar.png" class="img-min-icon"> {{auth.currentUser.username}})</a>
+      <a mat-list-item routerLink="/admin" routerLinkActive="active" *ngIf="auth.loggedIn && auth.isAdmin"><i class="material-icons">supervised_user_circle</i> Administration</a>
+      <a mat-list-item routerLink="/logout" routerLinkActive="active" *ngIf="auth.loggedIn"><i class="material-icons">exit_to_app</i> Logout</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>NGX Blog D-Lite</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
